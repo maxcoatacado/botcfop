@@ -1,1 +1,1 @@
-worker: python3 blingCte.py
+web: python blingCte.py
