@@ -7,11 +7,12 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 navigator = webdriver.Chrome(os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
-navigator.get('https://www.bling.com.br/')
-print(navigator.title)
+navigator.get('https://www.bling.com.br/ctes.php#list')
 
-# email = navigator.find_element(By.CSS_SELECTOR, '#username')
+email = navigator.find_element(By.CSS_SELECTOR, '#username')
+print(email)
 # email.send_keys('nieliton@maxcoatacado.com.br')
+
 
 # sleep(5)
 
