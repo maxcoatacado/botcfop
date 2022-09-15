@@ -1,1 +1,1 @@
-web: python blingCte.py
+web: python3 blingCte.py
